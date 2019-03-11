@@ -45,4 +45,4 @@ RUN tic /root/screen.xterm-256color
 RUN echo "root:password" | chpasswd
 
 EXPOSE 22
-CMD ["/sbin/init"]
+CMD ["/sbin/init", "/etc/rc.d/rc.local"]
